@@ -30,7 +30,12 @@ git pull --rebase
 2. force to merge destroy others' commit
 git push -f
 
-## git ignore global
+## git ignore
+New-Item .gitignore
+
+add filename into the .gitignore
+
+global
 git config --global core.excludesfile ~/.gitignore_global
 
 #### if already tracked

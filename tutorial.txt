@@ -1,0 +1,41 @@
+# **notebook set up 
+#### link
+https://www.dataquest.io/blog/docker-data-science/
+
+
+# **git command
+
+## create repo
+change the current working directory to your local project.
+$ git init
+$ git remote add origin remote repository URL
+Sets the new remote
+$ git remote -v
+Verifies the new remote URL
+
+## git commit
+$ git add .
+Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+$ git commit -m "First commit"
+Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+## git push
+$ git push origin master
+Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+## when push failed
+1. pull then push
+git pull --rebase
+
+2. force to merge destroy others' commit
+git push -f
+
+## git ignore global
+git config --global core.excludesfile ~/.gitignore_global
+
+#### if already tracked
+git rm --cached FILENAME
+
+#### link
+https://help.github.com/en/articles/ignoring-files
+

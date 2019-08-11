@@ -1,7 +1,8 @@
 DROP database test;
 create database test;
 use test;
-show tables;
+
+
 /*  quiz_content TEXT NOT NULL,
  on delete cascade on update cascade*/
 CREATE TABLE teacher_list
@@ -91,14 +92,15 @@ CREATE TABLE c_s_belonging
 CREATE TABLE test_taking
 (
   student_reply VARCHAR(255) NOT NULL,
-  test_date DATE NOT NULL,
-  test_name VARCHAR(50) NOT NULL,
   student_email VARCHAR(50) NOT NULL,
   test_paper_id VARCHAR(50) NOT NULL,
+  test_date DATE NOT NULL,
+  test_name VARCHAR(50) NOT NULL,
   PRIMARY KEY (student_email, test_paper_id),
   FOREIGN KEY (student_email) REFERENCES student_list(student_email) on delete cascade on update cascade,
   FOREIGN KEY (test_paper_id) REFERENCES test_paper(test_paper_id) on delete cascade on update cascade
 );
+
 
 CREATE TABLE class_test_assign
 (

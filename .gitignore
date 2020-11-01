@@ -2,3 +2,6 @@ twitterkey.py
 twitterkey2.py
 RA_WORK_CONTENT_BQ.json
 sqlpassword.py
+tutorial/
+__pycache__/
+.ipynb_checkpoints/
